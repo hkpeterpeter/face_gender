@@ -5,6 +5,8 @@ import numpy as np
 from tensorflow.keras.preprocessing import image
 import pyscreenshot as ImageGrab
 
+model = ""
+
 def preprocess_img(img, target_size=(224,224)):
     img = cv2.resize(img, target_size)
     img_pixels = image.img_to_array(img)
@@ -18,7 +20,9 @@ def grab_screenshot():
     return im
 
 def recog_gender(img_file=None, image=None):
-    model = DeepFace.build_model("Gender")
+    global model 
+    if model == "": # only need to build the model for the first time
+        model = DeepFace.build_model("Gender")
     if img_file:
         image = face_recognition.load_image_file(img_file)
     face_locations = face_recognition.face_locations(image)
