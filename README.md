@@ -13,7 +13,7 @@ python main.py
 Step 1 - Install `OBS` and set up a virtual camera
 
 - `OBS` stands for [Open Broadcaster Software](https://obsproject.com/)
-    - Free and open source for broadcastershttps://obsproject.com/
+    - Free and open source for broadcasters
 - Add a video capture device
 - Add a Window capture and select the program window
 - `Start Virtual Camera` (bottom-right corner)
@@ -40,19 +40,19 @@ Step 3 - Select Gallery View in Zoom
 
 ## Recommendations on setting up the Python environment
 
-- To avoid polluting the Python environment, please consider to use `venv` in Python 
+- Using `venv` to avoid polluting the Python environment
     - [Python virtual environment tutorial](https://docs.python.org/3/tutorial/venv.html)
-- You should also setup `pyenv`
+- Setup `pyenv` if you have multiple Python installed version
     - For some reason, installing Python via `pyenv` does not support `Tcl/Tk` by default
     - This application needs `Tcl/Tk` support, you need to follow this [stackoverflow discussion](https://stackoverflow.com/questions/60469202/unable-to-install-tkinter-with-pyenv-pythons-on-macos) in order to install a Python environment with `Tcl/Tk` support
 
-### Demo screenshots
+### Demo Screenshots
 
-Example 1 - Only 1 male on the screen
+Example 1 - Only 1 man on the screen
 
 ![Example 1](screenshots/example1.png)
 
-Example 2 - 1 male and 1 female on the screen 
+Example 2 - 1 man and 1 woman on the screen 
 
 ![Example 2](screenshots/example2.png)
 

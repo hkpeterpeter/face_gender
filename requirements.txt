@@ -1,5 +1,4 @@
 numpy==1.19.5
-matplotlib==3.3.3
 tensorflow==2.4.0
 deepface==0.0.49
 opencv_python==4.5.1.48
