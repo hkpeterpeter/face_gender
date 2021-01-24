@@ -8,10 +8,12 @@ pip install -r requirements.txt
 python main.py
 ```
 
-## How to use in the Zoom meeting
+## How to use the program in a Zoom meeting?
 
 Step 1 - Install `OBS` and set up a virtual camera
 
+- `OBS` stands for [Open Broadcaster Software](https://obsproject.com/)
+    - Free and open source for broadcastershttps://obsproject.com/
 - Add a video capture device
 - Add a Window capture and select the program window
 - `Start Virtual Camera` (bottom-right corner)
@@ -28,8 +30,10 @@ Step 2 - Open Zoom and select the virtual camera
 
 Step 3 - Select Gallery View in Zoom
 
-- The application will keep detecting faces (per 1 second by default) 
-- The update frequency can be adjusted in `main.py`)
+- The application will keep detecting faces 
+    - By default, the face detection is executed per second 
+    - The update frequency `WAIT_SECONDS` can be adjusted in `main.py`
+        - A lower value can be set for an older laptop
 
 ![Step 3](how_to_use_with_zoom/use_with_zoom_step3.png)
 
