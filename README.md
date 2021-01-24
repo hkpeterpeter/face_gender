@@ -2,11 +2,37 @@
 Simple face gender detection for an online meeting, modified based on [face-emotion](https://github.com/DeepSE/face-emotion)
 
 
-## Run
+## How to run the program?
 ```bash
 pip install -r requirements.txt
 python main.py
 ```
+
+## How to use in the Zoom meeting
+
+Step 1 - Install `OBS` and set up a virtual camera
+
+- Add a video capture device
+- Add a Window capture and select the program window
+- `Start Virtual Camera` (bottom-right corner)
+    - Once the virtual camera is started, the button text becomes `Stop Virtual Camera`
+
+![Step 1](how_to_use_with_zoom/use_with_zoom_step1.png)
+
+
+Step 2 - Open Zoom and select the virtual camera 
+
+- Remember, you should select the `OBS Virtual Camera` (instead of your default webcam)
+
+![Step 2](how_to_use_with_zoom/use_with_zoom_step2.png)
+
+Step 3 - Select Gallery View in Zoom
+
+- The application will keep detecting faces (per 1 second by default) 
+- The update frequency can be adjusted in `main.py`)
+
+![Step 3](how_to_use_with_zoom/use_with_zoom_step3.png)
+
 
 ## Recommendations on setting up the Python environment
 
