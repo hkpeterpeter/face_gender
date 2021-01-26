@@ -5,10 +5,12 @@ import random
 male_turtle = ""
 female_turtle = "" 
 text_turtle = ""
+my_font = ("Arial", 60, "bold")
 
 def visualize_init():
     global male_turtle, female_turtle, text_turtle
     turtle.setup(800, 200)
+    turtle.screensize(780, 180) # Canvas size < window size to avoid scrollbars
     turtle.title("Gender Display")
     turtle.addshape("icon_male.gif")
     turtle.addshape("icon_female.gif")
@@ -33,10 +35,9 @@ def visualize(count_man, count_woman):
     text_turtle.clear()
     male_turtle.goto(-300, 0)
     female_turtle.goto(300, 0)
-    my_font = ("Arial", 48, "bold")
     text_turtle.goto(-250, -25)
     text_turtle.write(str(count_man), font=my_font)
-    text_turtle.goto(200, -25)
+    text_turtle.goto(180, -25)
     text_turtle.write(str(count_woman), font=my_font )
     turtle.tracer(True)
 
