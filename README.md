@@ -3,7 +3,13 @@ Simple face gender detection for an online meeting, modified based on [face-emot
 
 
 ## How to run the program?
+
+- Using `venv` to avoid polluting the Python environment
+    - [Python virtual environment tutorial](https://docs.python.org/3/tutorial/venv.html)
+
 ```bash
+python3 -m venv --system-site-packages ./venv
+source venv/bin/activate
 pip install -r requirements.txt
 python main.py
 ```
@@ -38,13 +44,7 @@ Step 3 - Select Gallery View in Zoom
 ![Step 3](how_to_use_with_zoom/use_with_zoom_step3.png)
 
 
-## Recommendations on setting up the Python environment
 
-- Using `venv` to avoid polluting the Python environment
-    - [Python virtual environment tutorial](https://docs.python.org/3/tutorial/venv.html)
-- Setup `pyenv` if you have multiple Python installed version
-    - For some reason, installing Python via `pyenv` does not support `Tcl/Tk` by default
-    - This application needs `Tcl/Tk` support, you need to follow this [stackoverflow discussion](https://stackoverflow.com/questions/60469202/unable-to-install-tkinter-with-pyenv-pythons-on-macos) in order to install a Python environment with `Tcl/Tk` support
 
 ### Demo Screenshots
 
@@ -61,6 +61,12 @@ Example 3 - Multiple people on the screen
 - Note: The sample Zoom screenshot is downloaded from the web
 
 ![Example 3](screenshots/example3.png)
+
+## Setting up the Python environment using pyenv
+
+- Setup `pyenv` if you have multiple Python installed version
+    - For some reason, installing Python via `pyenv` does not support `Tcl/Tk` by default
+    - This application needs `Tcl/Tk` support, you need to follow this [stackoverflow discussion](https://stackoverflow.com/questions/60469202/unable-to-install-tkinter-with-pyenv-pythons-on-macos) in order to install a Python environment with `Tcl/Tk` support
 
 
 
